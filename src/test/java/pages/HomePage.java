@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,10 +15,8 @@ public class HomePage {
         this.driver = driver;
     }
 
-        @FindBy (xpath = "//*[@id=\"ext-gen1054\"]/ul/li[1]/div/ul/li[1]/a")
+        @FindBy (className = "info-item")
         private WebElement userInfo;
-        @FindBy(xpath = "//*[@id=\"button-1293-btnInnerEl\"]")
-        private WebElement makeBookingButton;
 
         public void checkHomeScreen(){
             userData = userInfo.getText();

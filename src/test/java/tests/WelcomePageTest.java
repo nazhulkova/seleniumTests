@@ -1,8 +1,12 @@
+package tests;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.WelcomePage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +22,7 @@ public class WelcomePageTest {
             driver = new ChromeDriver(); // создаем новый драйвер
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.get("https://192.0.2.28/web-portal/login");
-            homePage = new HomePage(driver);iu
+            homePage = new HomePage(driver);
             welcomePage = new WelcomePage(driver);
 
 

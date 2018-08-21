@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +37,7 @@ private WebElement logInButton;
 
 public void clickLogInButton(){
         logInButton.click();
-        //return new WelcomePage(driver);
+
 }
 
 public void checkOccurredErrorMessage() {
